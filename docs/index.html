@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Эволюция — расслабляющая инкременталка про жизнь</title>
+<meta name="description" content="2D-инкременталка про эволюцию биолюминесцентной жизни: 10 эр, 31 апгрейд, ДНК-престиж, полностью процедурные фон, существо и звук. Скачать Evolution.exe.">
+<meta property="og:title" content="Эволюция">
+<meta property="og:description" content="Расслабляющая 2D-инкременталка про эволюцию жизни в тёмном океане.">
+<meta property="og:image" content="screens/start_era1.png">
+<link rel="icon" href="https://raw.githubusercontent.com/konem-popolam-sketch/evolution/main/icon.svg">
+<style>
+  :root{
+    --bg:#05060d; --deep:#070b16; --ink:#e8f4ff; --dim:#8aa0b8;
+    --glow:#57e2c8; --gold:#ffb657; --line:rgba(120,190,220,.16);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 700px at 50% -10%,#0c2033 0%,var(--bg) 55%,#03040a 100%);
+    color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--glow)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{text-align:center;padding:88px 0 40px;position:relative}
+  header:before{content:"";position:absolute;inset:0;background:radial-gradient(600px 300px at 50% 20%,rgba(87,226,200,.12),transparent 70%);pointer-events:none}
+  .eyebrow{letter-spacing:.34em;text-transform:uppercase;font-size:12px;color:var(--dim)}
+  h1{font-size:clamp(44px,9vw,88px);margin:.15em 0 .1em;font-weight:800;letter-spacing:.02em;
+     background:linear-gradient(180deg,#eafff9,#63d9c4 60%,#2c8f80);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lede{max-width:640px;margin:0 auto;color:#b9cbdd;font-size:18px}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:34px 0 10px}
+  .btn{display:inline-block;padding:15px 30px;border-radius:999px;text-decoration:none;font-weight:700;
+       border:1px solid rgba(87,226,200,.5);color:#04201c;background:linear-gradient(180deg,#8df5df,#3fc9b1);
+       box-shadow:0 12px 40px -12px rgba(87,226,200,.7);transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(87,226,200,.9)}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line);box-shadow:none}
+  .btn.ghost:hover{border-color:rgba(87,226,200,.45)}
+  .meta{margin-top:14px;color:var(--dim);font-size:13px}
+  section{padding:64px 0}
+  h2{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--dim);font-weight:600;margin:0 0 22px}
+  figure{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+         box-shadow:0 40px 90px -50px #000, 0 0 0 1px rgba(255,255,255,.02) inset;background:#04070f}
+  figure img{display:block;width:100%;height:auto}
+  figcaption{padding:10px 16px;color:var(--dim);font-size:13px;border-top:1px solid var(--line)}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:22px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:20px;background:linear-gradient(180deg,rgba(12,28,44,.6),rgba(6,12,22,.6))}
+  .card b{display:block;color:var(--glow);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+  .card p{margin:0;color:#b7c8da;font-size:15px}
+  .shots{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  ol.steps{color:#b7c8da;padding-left:22px}
+  ol.steps li{margin:8px 0}
+  code{background:rgba(120,190,220,.1);padding:2px 7px;border-radius:6px;font-size:14px}
+  footer{padding:56px 0 48px;color:var(--dim);font-size:14px;text-align:center;border-top:1px solid var(--line)}
+  .eras{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;padding:0;list-style:none}
+  .eras li{font-size:13px;color:#9fb4c8;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+  .eras li:last-child{color:var(--gold);border-color:rgba(255,182,87,.35)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Godot 4.7 · Windows x64 · офлайн</div>
+    <h1>Эволюция</h1>
+    <p class="lede">Расслабляющая 2D-инкременталка: вы растите биолюминесцентную жизнь в тёмном океане — от первой искры до разумного сверхорганизма. Всё процедурное: фон, существо, звук, интерфейс.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/konem-popolam-sketch/evolution/releases/download/v1.0.0/Evolution.exe">Скачать Evolution.exe</a>
+      <a class="btn ghost" href="https://github.com/konem-popolam-sketch/evolution">Исходники на GitHub</a>
+    </div>
+    <div class="meta">109 МБ · один файл, установка не нужна · сейв в <code>%APPDATA%\Godot\app_userdata\Эволюция</code></div>
+  </header>
+
+  <section>
+    <figure>
+      <img src="screens/start_era1.png" alt="Первый запуск: Эра I «Искра»" loading="lazy">
+      <figcaption>Эра I «Искра» — первый запуск: подсказка гаснет после первого клика по воде.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Как это играется</h2>
+    <div class="grid">
+      <div class="card"><b>Клик по воде</b><p>Всплеск биомассы. Сила клика растёт от ДНК и апгрейдов; клик всегда остаётся осмысленным.</p></div>
+      <div class="card"><b>31 апгрейд</b><p>Четыре вкладки — Рост, Мутации, Симбиоз, ДНК. Карточка сама говорит: готово к покупке, не хватает N, закрыто.</p></div>
+      <div class="card"><b>10 эр</b><p>Каждый порог — баннер «НОВАЯ ЭРА»: существо перестраивается за 2 секунды, меняется палитра океана и аккорд эмбиента.</p></div>
+      <div class="card"><b>ДНК-престиж</b><p>Сброс прогресса за ДНК: <code>floor(sqrt(total / 500 000))</code>. Каждая ДНК навсегда даёт +15% к производству.</p></div>
+      <div class="card"><b>Оффлайн-прогресс</b><p>50% скорости за время отсутствия, максимум 8 часов. При возврате — тост с накопленным.</p></div>
+      <div class="card"><b>Автосейв</b><p>Каждые 15 секунд, плюс сохранение при выходе. Ничего не теряется.</p></div>
+    </div>
+    <ul class="eras">
+      <li>Искра</li><li>Капля</li><li>Амёба</li><li>Медуза</li><li>Полип</li><li>Колония</li><li>Странник</li><li>Симбионт</li><li>Разум</li><li>Сверхорганизм</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Кадры</h2>
+    <div class="shots">
+      <figure><img src="screens/era4_medusa.png" alt="Эра IV «Медуза»" loading="lazy"><figcaption>Эра IV «Медуза»</figcaption></figure>
+      <figure><img src="screens/era9_razum.png" alt="Эра IX «Разум»" loading="lazy"><figcaption>Эра IX «Разум»</figcaption></figure>
+      <figure><img src="screens/stats.png" alt="Окно статистики" loading="lazy"><figcaption>Статистика и сброс прогресса</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Запуск</h2>
+    <ol class="steps">
+      <li>Скачайте <a href="https://github.com/konem-popolam-sketch/evolution/releases/download/v1.0.0/Evolution.exe">Evolution.exe</a>.</li>
+      <li>Запустите двойным кликом — движок и все ассеты уже внутри одного файла.</li>
+      <li>Windows 10/11 x64, видеокарта с Vulkan или D3D12 (рендерер Forward+).</li>
+    </ol>
+    <p class="meta">Хотите собрать сами? <code>Godot 4.7.2 --headless --path . --export-release "Windows Desktop" build\Evolution.exe</code> — пресет уже лежит в <code>export_presets.cfg</code>.</p>
+  </section>
+
+  <footer>
+    Сделано на Godot 4.7.2 · процедурная графика и звук, ни одного внешнего ассета · <a href="https://github.com/konem-popolam-sketch/evolution">konem-popolam-sketch/evolution</a>
+  </footer>
+</div>
+</body>
+</html>
