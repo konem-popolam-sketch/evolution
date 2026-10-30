@@ -1,0 +1,29 @@
+# Godot import cache / editor state
+.godot/
+*.translation
+
+# Build output
+build/
+dist/
+
+# Runtime saves (created by the game)
+save/*.json
+save/*.backup-*.json
+
+# Scratch / diagnostics
+tmp/
+tests/artifacts/
+preview*.png
+
+# Engine binary (180 MB, too big for git — see README)
+tools/Godot_v4.7.2-stable_win64.exe
+tools/*.exe
+
+# Agent studio scaffolding is a separate project
+.agent-teams/
+studio/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
